@@ -30,7 +30,6 @@ stages {
 
     post {
       always {
-        archiveArtifacts artifacts: 'Amazon-Core/target/*.jar', followSymlinks: false
         junit 'Amazon-Core/target/surefire-reports/*.xml'
       }
     }
